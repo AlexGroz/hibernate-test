@@ -22,6 +22,8 @@ public class Application implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         Account account = new Account("Lori", 15);
+        Account savedAccount = accountDAO.save(account);
+        System.out.println(accountDAO.findById(savedAccount.getAccountId()));
 
     }
 }
