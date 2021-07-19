@@ -25,4 +25,11 @@ public class AccountDAO {
         session.close();
         return account;
     }
+
+    public Account findById(Long id){
+        Session session = sessionFactory.openSession();
+        Account account = session.find(Account.class, id);
+        session.close();
+        return account;
+    }
 }
