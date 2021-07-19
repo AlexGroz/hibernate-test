@@ -1,4 +1,4 @@
-package com.javastart.hibernate;
+package com.javastart.hibernatetest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
