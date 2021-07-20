@@ -14,7 +14,7 @@ public class Account {
 
     private Integer age;
 
-    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Bill> bills;
 
     public Account() {
