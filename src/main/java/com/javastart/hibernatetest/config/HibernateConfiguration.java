@@ -26,7 +26,7 @@ public class HibernateConfiguration {
         LocalSessionFactoryBean localSessionFactoryBean = new LocalSessionFactoryBean();
         localSessionFactoryBean.setDataSource(basicDataSource());
         localSessionFactoryBean.setHibernateProperties(hibernateProperties());
-        localSessionFactoryBean.setPackagesToScan("com.javastart.hibernatetst.entity");
+        localSessionFactoryBean.setPackagesToScan("com.javastart.hibernatetest.entity");
         return localSessionFactoryBean;
     }
 
